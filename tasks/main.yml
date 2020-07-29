@@ -1,7 +1,7 @@
 ---
 - name: Install required packages
   apt:
-    name: "{{ bbb_required_packages }}"
+    name: "{{ bbb_required_packages.ansible_distribution }}"
     update_cache: true
     state: "{{ bbb_state }}"
 
